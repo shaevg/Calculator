@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="SourceFiles"
+                   displayName="Исходные файлы"
+                   projectFiles="true">
+      <itemPath>calculator.cpp</itemPath>
+      <itemPath>core.cpp</itemPath>
+      <itemPath>expression.cpp</itemPath>
+      <itemPath>main.cpp</itemPath>
+      <itemPath>number.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="HeaderFiles"
+                   displayName="Файлы заголовков"
+                   projectFiles="true">
+      <itemPath>calculator.h</itemPath>
+      <itemPath>core.h</itemPath>
+      <itemPath>expression.h</itemPath>
+      <itemPath>number.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Файлы ресурсов"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Файлы тестов"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+      <logicalFolder name="f2"
+                     displayName="CalculatorClassTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/CalculatorTestClass.cpp</itemPath>
+        <itemPath>tests/CalculatorTestClass.h</itemPath>
+        <itemPath>tests/calculatorTestRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f3"
+                     displayName="ExpressionTestClass"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/ExpressionTestClass.cpp</itemPath>
+        <itemPath>tests/ExpressionTestClass.h</itemPath>
+        <itemPath>tests/expressionTestRunner.cpp</itemPath>
+      </logicalFolder>
+      <logicalFolder name="f1"
+                     displayName="NumberClassTest"
+                     projectFiles="true"
+                     kind="TEST">
+        <itemPath>tests/NumberTestClass.cpp</itemPath>
+        <itemPath>tests/NumberTestClass.h</itemPath>
+        <itemPath>tests/numberTestRunner.cpp</itemPath>
+      </logicalFolder>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Важные файлы"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <ccTool>
+          <standard>8</standard>
+        </ccTool>
+      </compileType>
+      <item path="calculator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="calculator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="core.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="core.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="expression.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="expression.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="number.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="number.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/CalculatorTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/CalculatorTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ExpressionTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ExpressionTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/NumberTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/NumberTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/calculatorTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/expressionTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/numberTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+          <standard>8</standard>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="calculator.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="calculator.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="core.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="core.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="expression.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="expression.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <folder path="TestFiles/f1">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f1</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f2">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f2</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <folder path="TestFiles/f3">
+        <cTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </cTool>
+        <ccTool>
+          <commandLine>`cppunit-config --cflags`</commandLine>
+        </ccTool>
+        <linkerTool>
+          <output>${TESTDIR}/TestFiles/f3</output>
+          <linkerLibItems>
+            <linkerOptionItem>`cppunit-config --libs`</linkerOptionItem>
+          </linkerLibItems>
+        </linkerTool>
+      </folder>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="number.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="number.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/CalculatorTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/CalculatorTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/ExpressionTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/ExpressionTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/NumberTestClass.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/NumberTestClass.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="tests/calculatorTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/expressionTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="tests/numberTestRunner.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
